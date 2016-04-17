@@ -83,6 +83,9 @@ $('#registration-form').submit(function(e){
 	*/
 
 $( document ).ready(function() {
+	//esconde o botao do video - ainda nao ha
+	$("#video").hide();
+
   $("#JuniName").hide();
 	$("#JuniName").prop('required', false);
 	$("#ano").hide();
