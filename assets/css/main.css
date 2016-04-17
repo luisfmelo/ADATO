@@ -310,6 +310,8 @@ ul li {
   margin-right: 5px;
   letter-spacing: 3px;
   text-transform: uppercase;
+  width:150px;
+  height: auto;
 }
 .site-branding .logo:focus, .site-branding .logo:hover {
   text-decoration: none;
@@ -595,6 +597,10 @@ ul li {
 }
 .site-footer .social-block li a:hover, .site-footer .social-block li a:focus {
   opacity: 0.8;
+}
+
+.juni:hover{
+  opacity: 0.6;
 }
 
 .headerBTN{
