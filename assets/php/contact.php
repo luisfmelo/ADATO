@@ -1,5 +1,4 @@
 <?php
-
 	$form_data = [];
 
 	$fname        	= $_POST['fname'];
