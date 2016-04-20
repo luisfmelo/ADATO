@@ -14,7 +14,7 @@
 	$mail->Password = $_CREDENTIALS['password'];			// SMTP password
 	$mail->SMTPSecure = $_CREDENTIALS['SMTPSecure'];		// Enable TLS encryption, `ssl` also accepted
 	$mail->Port = $_CREDENTIALS['port'];					// TCP port to connect to
-	$mail->setFrom($_CREDENTIALS['username'], 'JuniFEUP');
+	$mail->setFrom($_CREDENTIALS['username'], 'JuniFEUP AD@TO');
 
 	$mail->SMTPOptions = array (
 		'ssl' => array(

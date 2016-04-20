@@ -10,13 +10,20 @@
 
 	$message = "Name: $fname, \nEmail: $email, \nCurso: $curso, \nAno: $ano.";
 
-	$mail->addAddress('pcova@junifeup.pt');
-	$mail->Subject = 'Test Sub';
+	$mail->addAddress('adato@junifeup.pt');
+	$mail->Subject = 'Registo AD@TO';
 
 	$mail->Body = $message;
 
-	if($mail->send())
+	if($mail->send()) {
 		$form_data['success'] = true;
+		$replymsg = "Obrigado $fname. O teu registo foi efetuado com sucesso\n\nCumprimentos\nJuniFEUP";
+		$mail->clearAddresses();
+		$mail->addAddress($email);
+		$mail->Subject = 'Registo AD@TO';
+		$mail->Body = $replymsg;
+		$mail->send();
+	}
 	else {
 		$form_data['success'] = false;
 	}
