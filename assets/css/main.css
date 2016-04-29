@@ -477,17 +477,33 @@ ul li {
   background: url(../images/partner/crystal-2.png) no-repeat center center/contain;
   width:100%;
 }
+.partner .crystal-3 {
+  background: url(../images/partner/crystal-3.png) no-repeat center center/contain;
+  width:100%;
+}
+.partner .crystal-4 {
+  background: url(../images/partner/crystal-4.png) no-repeat center center/contain;
+  width:100%;
+}
 .partner .glass-1 {
   background: url(../images/partner/glass-1.png) no-repeat center center/contain;
-  width:70%;
+  width:50%;
 }
 .partner .glass-2 {
   background: url(../images/partner/glass-2.png) no-repeat center center/contain;
-  width:70%;
+  width:50%;
 }
 .partner .glass-3 {
   background: url(../images/partner/glass-3.png) no-repeat center center/contain;
-  width:70%;
+  width:50%;
+}
+.partner .glass-4 {
+  background: url(../images/partner/glass-4.png) no-repeat center center/contain;
+  width:50%;
+}
+.partner .glass-5 {
+  background: url(../images/partner/glass-5.png) no-repeat center center/contain;
+  width:50%;
 }
 .partner .convidado-1 {
   background: url(../images/partner/convidado-1.png) no-repeat center center/contain;
@@ -624,4 +640,24 @@ ul li {
 .headerBTN:hover{
   color: #FFF;
   font-size: 15px;
+}
+
+.title
+{
+    color: rgb(15,30,39);
+    letter-spacing: 1px;
+    margin: 50px 0 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 150%;
+}
+
+hr{
+  color: rgb(15,30,39);
+  border: 0;
+  height: 0; /* Firefox... */
+  box-shadow: 0 0 10px 1px black;
+}
+hr.style-five:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
 }
