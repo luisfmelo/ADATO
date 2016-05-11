@@ -74,3 +74,8 @@ $( document ).ready(function() {
 	$("#video").hide();
 
 });
+
+
+/**
+ * AUDIO CONTROLS
+ */

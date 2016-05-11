@@ -480,12 +480,17 @@ ul li {
 }
 .partner .convidado-1 {
   background: url(../images/partner/convidado-1.png) no-repeat center center/contain;
-  width:35%;
+  width:25%;
   margin: 0 auto;
 }
 .partner .convidado-2 {
   background: url(../images/partner/convidado-2.png) no-repeat center center/contain;
-  width:35%;
+  width:25%;
+  margin: 0 auto;
+}
+.partner .convidado-3 {
+  background: url(../images/partner/convidado-3.png) no-repeat center center/contain;
+  width:25%;
   margin: 0 auto;
 }
 
