@@ -7,11 +7,17 @@
 	$email	= $_POST['email'];
 	$curso	= $_POST['curso'];
 	$ano	= $_POST['ano'];
-	$linkedin	= $_POST['lkin'];
+	$linkedin	= $_POST['linkedin'];
+	$h1	= $_POST['hobbie1'];
+	$h2	= $_POST['hobbie2'];
+	$h3	= $_POST['hobbie3'];
 
-	$message = "Name: $fname, \nEmail: $email, \nCurso: $curso, \nAno: $ano, \nLinkedin: $linkedin.";
+  move_uploaded_file($_FILES["cv"]["my_cv"], $target_file);
+
+  $message = "Name: $fname, \nEmail: $email, \nCurso: $curso, \nAno: $ano, \nHobbie1: $h1, \nHobbie2: $h2, \nHobbie3: $h3, \nLinkedin: $linkedin.";
 
 	$mail->addAddress('adato@junifeup.pt');
+  $email->AddAttachment( $target_file , 'cv.pdf' );
 	$mail->Subject = 'Registo AD@TO';
 
 	$mail->Body = $message;

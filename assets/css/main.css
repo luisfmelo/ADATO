@@ -1,17 +1,19 @@
 /*
  * 1. Google Font
  */
+
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,700);
+
 /*
  * 2.0 Global Style
  */
+
 html, * {
   font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
   font-size: 14px;
   /** MUDEI ESTA COR **
   background-color: rgb(15,30,39)!important; /*rgb(15,30,39)!important;*/
 }
-
 body {
   color: #4e4e4e;
   font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
@@ -21,32 +23,22 @@ body {
   position: relative;
   -webkit-font-smoothing: antialiased;
 }
-
 a {
   color: #000;
 }
 a:focus {
   outline: none;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
-
 p {
   margin: 0 0 30px;
 }
-
 ul li {
   font-weight: 700;
   margin-bottom: 10px;
 }
-
 .custom-list-icon, .list-arrow-right {
   list-style-type: none;
   padding: 0;
@@ -61,7 +53,6 @@ ul li {
   color: #4e4e4e;
   font-family: "Ionicons";
 }
-
 .social-block {
   list-style-type: none;
   padding: 0;
@@ -81,37 +72,29 @@ ul li {
 .social-block li a:hover, .social-block li a:focus {
   color: #000;
 }
-
-.btn.active.focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn:active:focus,
-.btn:focus {
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
   outline: none;
 }
-
 .btn {
   border: 0;
   border-radius: 0;
   padding: 6px 28px;
   text-transform: uppercase;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
-          transition-property: transform;
+  transition-property: transform;
 }
 .btn:hover {
   -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
 }
-
 .form-control {
   border-radius: 0;
   box-shadow: none;
@@ -125,7 +108,6 @@ ul li {
   border-color: #ccc;
   background-color: #f2f2f2;
 }
-
 .valign-center {
   display: -webkit-box;
   display: -webkit-flex;
@@ -133,16 +115,14 @@ ul li {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-
 .section {
   padding: 70px 0;
 }
-
 .section-title {
-  color: rgb(33,35,36);
+  color: rgb(33, 35, 36);
   letter-spacing: 1px;
   margin: 0 0 20px;
   text-transform: uppercase;
@@ -152,17 +132,18 @@ ul li {
 /*
  * 3.0 Helper Class
  */
+
+
 /*
  * 3.1 Helper Class: font-weight
  */
+
 .font-300 {
   font-weight: 300;
 }
-
 .font-400 {
   font-weight: 400;
 }
-
 .font-700 {
   font-weight: 700;
 }
@@ -170,14 +151,13 @@ ul li {
 /*
  * 3.2 Helper Class: margin
  */
+
 .mt0 {
   margin-top: 0;
 }
-
 .mb0 {
   margin-bottom: 0;
 }
-
 .mt20 {
   margin-top: 20px;
 }
@@ -185,6 +165,7 @@ ul li {
 /*
  * 3.3 Helper Class: list
  */
+
 .list-arrow-right li::before {
   content: "\f3d3";
 }
@@ -192,6 +173,7 @@ ul li {
 /*
  * 3.4 Helper Class: button
  */
+
 .btn-white {
   color: #000;
   background-color: #fff;
@@ -200,19 +182,21 @@ ul li {
   color: #000;
   background-color: #fff;
 }
-
 .btn-black {
   color: #fff;
-  background-color: rgb(33,35,36);/*#000;*/
+  background-color: rgb(33, 35, 36);
+  /*#000;*/
 }
 .btn-black:hover, .btn-black:focus {
   color: #fff;
-  background-color: rgb(33,35,36);/*#000;*/
+  background-color: rgb(33, 35, 36);
+  /*#000;*/
 }
 
 /*
  * 3.5 Helper Class: background
  */
+
 .bg-image, .bg-image-1, .bg-image-2 {
   position: relative;
 }
@@ -224,26 +208,24 @@ ul li {
   bottom: 0;
   left: 0;
 }
-
 .bg-image-1 {
   background: url(../images/backgrounds/bg-1.jpg) no-repeat center center/cover;
 }
 .bg-image-1::before {
-  background-color: rgb(33,35,36);/*rgba(0, 0, 0, 0.7);*/
+  background-color: rgb(33, 35, 36);
+  /*rgba(0, 0, 0, 0.7);*/
 }
-
 .bg-image-2 {
   background: url(../images/backgrounds/bg-2.jpg) no-repeat center bottom/cover;
 }
 .bg-image-2::before {
-  background-color: rgb(33,35,36);/*rgba(0, 0, 0, 0.7);*/
+  background-color: rgb(33, 35, 36);
+  /*rgba(0, 0, 0, 0.7);*/
 }
-
 @media (min-width: 768px) {
   .section {
     padding: 90px 0;
   }
-
   .section-title {
     color: #313131;
     letter-spacing: 1px;
@@ -252,17 +234,19 @@ ul li {
     text-align: left;
   }
 }
+
 /*
  * 4.0 Navigation
  */
+
 .navbar-custom {
   border: 0;
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: rgb(33,35,36);
+  background-color: rgb(33, 35, 36);
   -webkit-transition: all 0.2s linear 0s;
-          transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
 }
 .navbar-custom .navbar-nav li {
   margin: 0;
@@ -281,7 +265,6 @@ ul li {
 .navbar-custom .navbar-nav > .active > a {
   border-color: rgba(255, 255, 255, 0.5);
 }
-
 .navbar-toggle {
   border: 0;
   border-radius: 0;
@@ -290,14 +273,12 @@ ul li {
 .navbar-toggle .icon-bar {
   background-color: #fff;
 }
-
 .navbar-solid {
-  background-color: rgb(33,35,36) !important;
+  background-color: rgb(33, 35, 36) !important;
   padding: 0 !important;
   -webkit-transition: all 0.2s linear 0s;
-          transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
 }
-
 .site-branding {
   float: left;
   margin-top: 0;
@@ -310,7 +291,7 @@ ul li {
   margin-right: 5px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  width:150px;
+  width: 150px;
   height: auto;
 }
 .site-branding .logo:focus, .site-branding .logo:hover {
@@ -320,6 +301,7 @@ ul li {
 /*
  * 5.0 Site Header
  */
+
 .site-header {
   width: 100%;
   height: 100%;
@@ -327,7 +309,8 @@ ul li {
   position: relative;
   text-align: center;
   /** MUDEI ESTA COR **/
-  background-color: rgb(33,35,36); /*rgb(15,30,39)!important;*/
+  background-color: rgb(33, 35, 36);
+  /*rgb(15,30,39)!important;*/
 }
 .site-header::before {
   content: "";
@@ -336,7 +319,8 @@ ul li {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgb(33,35,36); /*rgba(0, 0, 0, 0.5);*/
+  background-color: rgb(33, 35, 36);
+  /*rgba(0, 0, 0, 0.5);*/
 }
 .site-header .intro {
   color: #fff;
@@ -361,24 +345,26 @@ ul li {
   margin-bottom: 10px;
   font-weight: 300;
 }
-
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
     padding-top: 30px;
   }
-
   .site-branding {
     margin-top: 6px;
     margin-left: 0;
   }
 }
+
 /*
  * 6.0 Section
  */
+
+
 /*
  * 6.1 Section: About
  */
+
 .about .section-title {
   margin: 0 0 25px;
 }
@@ -389,6 +375,7 @@ ul li {
 /*
  * 6.2 Section: Facts
  */
+
 .facts i {
   color: #fff;
   font-size: 2em;
@@ -398,17 +385,19 @@ ul li {
   text-align: center;
   font-weight: 400;
 }
-.facts{
+.facts {
   padding: 3% 0 3% 0;
 }
-
 
 /*
  * 6.4 Section: Registration & Pricing
  */
+
+
 /*
  * 6.5 Section: Contribution
  */
+
 .contribution {
   text-align: center;
   color: #fff;
@@ -417,6 +406,7 @@ ul li {
 /*
  * 6.7 Section: Schedule
  */
+
 .partner {
   /*background-color: #f8f8f8;*/
   background-color: #fff;
@@ -428,78 +418,79 @@ ul li {
   width: 150px;
   margin: 25px auto;
   -webkit-transition: 0.5s all linear;
-          transition: 0.5s all linear;
+  transition: 0.5s all linear;
 }
 .partner .partner-box {
   opacity: 1;
 }
 .partner .crystal-1 {
   background: url(../images/partner/crystal-1.png) no-repeat center center/contain;
-  width:100%;
+  width: 100%;
 }
 .partner .crystal-2 {
   background: url(../images/partner/crystal-2.png) no-repeat center center/contain;
-  width:100%;
+  width: 100%;
 }
 .partner .crystal-3 {
   background: url(../images/partner/crystal-3.png) no-repeat center center/contain;
-  width:100%;
+  width: 100%;
 }
 .partner .crystal-4 {
   background: url(../images/partner/crystal-4.png) no-repeat center center/contain;
-  width:100%;
+  width: 100%;
 }
 .partner .crystal-5 {
   background: url(../images/partner/crystal-5.png) no-repeat center center/contain;
-  width:100%;
+  width: 100%;
 }
 .partner .crystal-6 {
   background: url(../images/partner/crystal-6.png) no-repeat center center/contain;
-  width:100%;
+  width: 100%;
 }
 .partner .glass-1 {
   background: url(../images/partner/glass-1.png) no-repeat center center/contain;
-  width:50%;
+  width: 50%;
 }
 .partner .glass-2 {
   background: url(../images/partner/glass-2.png) no-repeat center center/contain;
-  width:50%;
+  width: 50%;
 }
 .partner .glass-3 {
   background: url(../images/partner/glass-3.png) no-repeat center center/contain;
-  width:50%;
+  width: 50%;
 }
 .partner .glass-4 {
   background: url(../images/partner/glass-4.png) no-repeat center center/contain;
-  width:50%;
+  width: 50%;
 }
 .partner .glass-5 {
   background: url(../images/partner/glass-5.png) no-repeat center center/contain;
-  width:50%;
+  width: 50%;
 }
 .partner .glass-6 {
   background: url(../images/partner/glass-6.png) no-repeat center center/contain;
-  width:50%;
+  width: 50%;
 }
 .partner .convidado-1 {
   background: url(../images/partner/convidado-1.png) no-repeat center center/contain;
-  width:25%;
+  width: 25%;
   margin: 0 auto;
 }
 .partner .convidado-2 {
   background: url(../images/partner/convidado-2.png) no-repeat center center/contain;
-  width:25%;
+  width: 25%;
   margin: 0 auto;
 }
 .partner .convidado-3 {
   background: url(../images/partner/convidado-3.png) no-repeat center center/contain;
-  width:25%;
+  width: 25%;
   margin: 0 auto;
 }
 
 /*
  * 6.8 Section: FAQ
  */
+
 .faq .panel-heading {
   cursor: pointer;
   color: #FFF;
@@ -508,7 +499,7 @@ ul li {
   font-family: "Ionicons";
   content: "\f218";
   -webkit-transition: 0.5s linear ease-out;
-          transition: 0.5s linear ease-out;
+  transition: 0.5s linear ease-out;
   position: absolute;
   left: 15px;
 }
@@ -522,7 +513,7 @@ ul li {
   margin-top: 15px;
 }
 .faq .panel-default > .panel-heading {
-  color: rgb(33,35,36);
+  color: rgb(33, 35, 36);
   background-color: #FFF;
   border-color: #FFF;
   border-radius: 0;
@@ -538,6 +529,7 @@ ul li {
 /*
  * 6.9 Section: photos
  */
+
 .grid {
   list-style-type: none;
   padding: 0;
@@ -548,7 +540,6 @@ ul li {
   display: block;
   clear: both;
 }
-
 .grid-item {
   float: left;
   overflow: hidden;
@@ -556,20 +547,16 @@ ul li {
   margin: 0;
   width: 100%;
 }
-
 @media (min-width: 768px) {
   .grid-item-sm-6 {
     width: 50%;
   }
-
   .grid-item-sm-3 {
     width: 25%;
   }
-
   .section-title {
     margin: 0 0 30px;
   }
-
   figure {
     margin-bottom: 0;
   }
@@ -578,20 +565,21 @@ ul li {
   .schedule-box {
     margin: 0;
   }
-
   .grid-item-md-6 {
     width: 50%;
   }
-
   .grid-item-md-3 {
     width: 25%;
   }
 }
+
 /*
  * 7.0 Site-footer
  */
+
 .site-footer {
-  background-color: rgb(33,35,36);/*#000;*/
+  background-color: rgb(33, 35, 36);
+  /*#000;*/
   color: #fff;
   text-align: center;
   padding: 30px 0;
@@ -609,60 +597,52 @@ ul li {
 .site-footer .social-block li a:hover, .site-footer .social-block li a:focus {
   opacity: 0.8;
 }
-
-.juni:hover{
+.juni:hover {
   opacity: 0.6;
 }
-
-.headerBTN{
+.headerBTN {
   color: #FFF;
   font-size: 25px;
 }
-
-.headerBTN:hover{
+.headerBTN:hover {
   color: #FFF;
   font-size: 15px;
 }
-
-.title
-{
-    color: rgb(33,35,36);
-    letter-spacing: 1px;
-    margin: 50px 0 0 0;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 150%;
+.title {
+  color: rgb(33, 35, 36);
+  letter-spacing: 1px;
+  margin: 50px 0 0 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 150%;
 }
-
-hr{
-  color: rgb(33,35,36);
+hr {
+  color: rgb(33, 35, 36);
   border: 0;
-  height: 0; /* Firefox... */
+  height: 0;
+  /* Firefox... */
   box-shadow: 0 0 7px 1px black;
 }
-hr.style-five:after {  /* Not really supposed to work, but does */
-    content: "\00a0";  /* Prevent margin collapse */
+hr.style-five:after {
+  /* Not really supposed to work, but does */
+  content: "\00a0";
+  /* Prevent margin collapse */
 }
-
-
 #quebra {
-  background-color: rgb(33,35,36);/*#000;*/
+  background-color: rgb(33, 35, 36);
+  /*#000;*/
   color: #fff;
   text-align: center;
   padding: 30px 0;
 }
-
-
 h4 {
   color: #fff;
   text-align: center;
   font-weight: 400;
 }
-
-.faq{
-  background-color: rgb(33,35,36);
+.faq {
+  background-color: rgb(33, 35, 36);
 }
-
 .faq .section-title {
   color: #FFF;
 }
