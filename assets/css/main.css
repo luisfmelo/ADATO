@@ -391,12 +391,15 @@ ul li {
  */
 .facts i {
   color: #fff;
-  font-size: 3em;
+  font-size: 2em;
 }
 .facts h3 {
   color: #fff;
   text-align: center;
   font-weight: 400;
+}
+.facts{
+  padding: 3% 0 3% 0;
 }
 
 
