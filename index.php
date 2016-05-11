@@ -297,7 +297,7 @@
       ?>
         <div class="row">
             <div class="col-md-12">
-                <h5 style="color: green;"><?php echo $_GET['msg']; ?></h5>
+                <h5 style="color: <?php echo $_GET['color']; ?>;"><?php echo $_GET['msg']; ?></h5>
             </div>
         </div>
       <?php

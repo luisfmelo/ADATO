@@ -56,5 +56,9 @@
 	else {
 		$form_data['success'] = false;
 	}
-	header("Location: http://$_SERVER[HTTP_HOST]?msg=Registo efetuado com sucesso#registration");
+
+	if($form_data['success'])
+		header("Location: http://$_SERVER[HTTP_HOST]?msg=Registo efetuado com sucesso&color=green#registration");
+	else
+		header("Location: http://$_SERVER[HTTP_HOST]?msg=Registo não foi efetuado com sucesso, pedimos desculpa!&color=red#registration");
 	die();
