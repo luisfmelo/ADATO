@@ -142,7 +142,7 @@ ul li {
 }
 
 .section-title {
-  color: #313131;
+  color: rgb(33,35,36);
   letter-spacing: 1px;
   margin: 0 0 20px;
   text-transform: uppercase;
@@ -399,25 +399,6 @@ ul li {
   font-weight: 400;
 }
 
-/*
- * 6.3 Section: Speaker
- */
-.speaker {
-  text-align: center;
-  color: #313131;
-  text-transform: uppercase;
-  margin: 25px 0;
-}
-.speaker h4 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-}
-.speaker p {
-  margin-bottom: 5px;
-}
-.speaker img:hover {
-  opacity: .7;
-}
 
 /*
  * 6.4 Section: Registration & Pricing
@@ -431,31 +412,11 @@ ul li {
 }
 
 /*
- * 6.6 Section: Schedule
- */
-.schedule-box {
-  position: relative;
-  background-color: rgb(33,35,36); /*#000;*/
-  color: #fff;
-  text-align: center;
-  padding: 50px 0;
-  margin: 25px 0 0;
-}
-.schedule-box::before {
-  content: '';
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  bottom: 5px;
-  left: 5px;
-  border: 1px solid #fff;
-}
-
-/*
  * 6.7 Section: Schedule
  */
 .partner {
-  background-color: #f8f8f8
+  /*background-color: #f8f8f8;*/
+  background-color: #fff;
 }
 .partner .partner-box {
   display: block;
@@ -466,7 +427,7 @@ ul li {
   -webkit-transition: 0.5s all linear;
           transition: 0.5s all linear;
 }
-.partner .partner-box:hover {
+.partner .partner-box {
   opacity: 1;
 }
 .partner .crystal-1 {
@@ -487,6 +448,10 @@ ul li {
 }
 .partner .crystal-5 {
   background: url(../images/partner/crystal-5.png) no-repeat center center/contain;
+  width:100%;
+}
+.partner .crystal-6 {
+  background: url(../images/partner/crystal-6.png) no-repeat center center/contain;
   width:100%;
 }
 .partner .glass-1 {
@@ -529,6 +494,7 @@ ul li {
  */
 .faq .panel-heading {
   cursor: pointer;
+  color: #FFF;
 }
 .faq .faq-toggle.collapsed::before {
   font-family: "Ionicons";
@@ -548,9 +514,9 @@ ul li {
   margin-top: 15px;
 }
 .faq .panel-default > .panel-heading {
-  color: #FFF;
-  background-color: rgb(33,35,36);/*#000000;*/
-  border-color: #000;
+  color: rgb(33,35,36);
+  background-color: #FFF;
+  border-color: #FFF;
   border-radius: 0;
   padding: 0;
 }
@@ -664,8 +630,31 @@ hr{
   color: rgb(33,35,36);
   border: 0;
   height: 0; /* Firefox... */
-  box-shadow: 0 0 10px 1px black;
+  box-shadow: 0 0 7px 1px black;
 }
 hr.style-five:after {  /* Not really supposed to work, but does */
     content: "\00a0";  /* Prevent margin collapse */
+}
+
+
+#quebra {
+  background-color: rgb(33,35,36);/*#000;*/
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+
+h4 {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+
+.faq{
+  background-color: rgb(33,35,36);
+}
+
+.faq .section-title {
+  color: #FFF;
 }
