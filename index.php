@@ -78,9 +78,10 @@
   </header>
 
   <div class="audio">
-    <audio id="audio" loop autoplay>
-      <source src="assets/audio/awesomeMusic.mp3" type='audio/mpeg; codecs="mp3"' />
-    </audio>
+      <audio id="audio" loop autoplay>
+          <source src="assets/audio/awesomeMusic.mp3" type='audio/mpeg; codecs="mp3"' />
+      </audio>
+  </div>
 
     <section id="about" class="section about">
       <div class="container">
@@ -170,7 +171,7 @@
           <div class="col-sm-12 title">Crystal Sponsors</div>
         </div>
         <div class="row">
-          <hr class="col-sm-4 cols col-md-offset-4"></hr>
+          <hr class="col-sm-4 cols col-md-offset-4">
         </div>
         <div class="row">
           <div class="col-sm-4">
@@ -202,7 +203,7 @@
       </div>
 
       <div class="row">
-        <hr class="col-sm-4 cols col-md-offset-4"></hr>
+        <hr class="col-sm-4 cols col-md-offset-4">
       </div>
       <div class="row">
         <div class="col-sm-4">
@@ -232,7 +233,7 @@
         <div class="col-sm-12 title">Convidados</div>
       </div>
       <div class="row">
-        <hr class="col-sm-4 cols col-md-offset-4"></hr>
+        <hr class="col-sm-4 cols col-md-offset-4">
       </div>
 
       <div class="row">
@@ -246,7 +247,6 @@
           <a class="partner-box convidado-2"></a>
         </div>
       </div>
-  </div>
   </section>
 
   <section id="register" class="section bg-image-1 facts text-center">
@@ -292,12 +292,23 @@
 
   <section id="registration" class="section registration">
     <div class="container">
+      <?php
+      if(isset($_GET['msg'])) {
+      ?>
+        <div class="row">
+            <div class="col-md-12">
+                <h5 style="color: green;"><?php echo $_GET['msg']; ?></h5>
+            </div>
+        </div>
+      <?php
+      }
+      ?>
       <div class="row">
         <div class="col-md-12">
           <h3 class="section-title">Inscrição</h3>
         </div>
       </div>
-      <form action="#" id="registration-form">
+      <form action="assets/PHP/contact.php" method="POST" id="registration-form" enctype="multipart/form-data">
         <div class="row">
           <div class="col-md-12" id="registration-msg" style="display:none;">
             <div class="alert"></div>
@@ -343,22 +354,19 @@
         </div>
         <div class="row col-sm-12">
           <label for="cv">Upload CV</label>
-          <input type="file" name="Upload CV" placeholder="CV" id="cv" name="cv">
+          <input type="file" placeholder="CV" id="cv" name="cv">
           <br>
         </div>
         <div class="row col-sm-12">
-
-      <p style="opacity:0.7">
-        * Campo com preenchimento obrigatório
-      </p>
+          <p style="opacity:0.7">
+            * Campo com preenchimento obrigatório
+          </p>
         </div>
 
-</div>
-    <div class="text-center mt20">
-      <button type="submit" class="btn btn-black" id="registration-submit-btn">Submit</button>
-    </div>
-    </div>
-    </form>
+        <div class="text-center mt20">
+          <button type="submit" class="btn btn-black" id="registration-submit-btn">Submit</button>
+        </div>
+      </form>
     </div>
   </section>
 
@@ -479,6 +487,7 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
 
   <section id="contact" class="section location">

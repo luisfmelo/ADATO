@@ -24,7 +24,7 @@ function handleTopNavAnimation() {
  * Registration Form
  */
 
-$('#registration-form').submit(function(e) {
+/*$('#registration-form').submit(function(e) {
   e.preventDefault();
 
   var postForm = { //Fetch form data
@@ -53,7 +53,7 @@ $('#registration-form').submit(function(e) {
       }
     }
   });
-});
+});*/
 
 /*
  * SmoothScroll
