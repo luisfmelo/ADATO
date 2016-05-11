@@ -7,8 +7,9 @@
 	$email	= $_POST['email'];
 	$curso	= $_POST['curso'];
 	$ano	= $_POST['ano'];
+	$linkedin	= $_POST['lkin'];
 
-	$message = "Name: $fname, \nEmail: $email, \nCurso: $curso, \nAno: $ano.";
+	$message = "Name: $fname, \nEmail: $email, \nCurso: $curso, \nAno: $ano, \nLinkedin: $linkedin.";
 
 	$mail->addAddress('adato@junifeup.pt');
 	$mail->Subject = 'Registo AD@TO';
