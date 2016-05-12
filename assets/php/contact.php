@@ -18,6 +18,7 @@
 		$target_file = $target_dir . $email . '.' .$fileType;
 
 		if ($fileType != "pdf" && $fileType != "jpg" && $fileType != "png" && $fileType != "jpeg")// && file_exists('../cv/'. $email . '.' .$fileType)) {
+		{
 			echo "Apenas são aceites ficheiros JPG, JPEG, PNG & PDF.";
 
 			return;
