@@ -1,10 +1,9 @@
 <?php
-	echo 1;
 	require 'ligacaoSMTP.php';
-	echo 2;
 	require 'generate_img.php';
-	echo 3;
+
 	$form_data = ['success' => true];
+
 	$fname	= $_POST['fname'];
 	$email	= $_POST['email'];
 	$curso	= $_POST['curso'];
@@ -13,9 +12,9 @@
 	$h1	= $_POST['hobbie1'];
 	$h2	= $_POST['hobbie2'];
 	$h3	= $_POST['hobbie3'];
-	echo 4;
+
 	//generate_credential($fname, $email, $curso, $h1, $h2, $h3);
-	echo 5;
+
 	if (isset($_FILES['cv']) && !empty($_FILES['cv']['name'])) {
 		$fileType = pathinfo(basename($_FILES["cv"]["name"]), PATHINFO_EXTENSION);
 		$target_dir = '../cv/';
@@ -36,14 +35,14 @@
 		}
 		$mail->addAttachment( $target_file , 'cv.pdf' );
 	}
-	echo 6;
+
   	$message = "Name: $fname \nEmail: $email \nCurso: $curso \nAno: $ano \nHobbie1: $h1 \nHobbie2: $h2 \nHobbie3: $h3 \nLinkedin: $linkedin";
 	$mail->addAddress('pcova@junifeup.pt');
 	//$mail->addAttachment('../images/credentials/'.$email.'.jpeg', 'credential.jpeg');
 	$mail->CharSet = 'UTF-8';
 	$mail->Subject = 'Registo AD@TO';
 	$mail->Body = $message;
-	echo 7;
+
 	if($mail->send()) {
 		$form_data['success'] = true;
 		$replymsg = "Obrigado $fname pelo teu registo!\n\nEstamos a processar a tua inscrição.\nDaqui a nada entraremos em contacto contigo!\n\n\nAD@TO - sem bancas, sem gravata, sem complicações - a tua carreira,  o teu futuro\n\n\nJuniFEUP";
