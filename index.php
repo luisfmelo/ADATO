@@ -101,10 +101,12 @@
 
           <h3 class="section-title">Sobre Nós</h3>
 
-          <p>Somos uma empresa júnior formada por estudantes de engenharia.
-            <br /> Acreditamos no Potencial Humano.
-            <br /> O nosso objectivo é aplicar conhecimento, formar a nossa equipa e ajudar as empresas nacionais a valorizarem os seus serviços e produtos.
-            <br />
+          <p>
+            A JuniFEUP é a empresa júnior da Faculdade de Engenharia da Universidade do Porto,
+            formada por estudantes de diversas áreas. <br /><br />
+            Acreditamos no Potencial Humano e o nosso objectivo é aplicar conhecimento,
+            formar a nossa equipa e contribuir para o desenvolvimento das
+            empresas nacionais e valorização dos seus serviços e produtos.<br />
           </p>
 
           <figure>
@@ -121,12 +123,12 @@
           <h3 class="section-title multiple-title">Sobre o Evento</h3>
 
           <p style="width:100%;">
-            O Another Day @ The Office é uma sessão de cocktails que promove o networking entre estudantes e os líderes de grandes empresas e tem tudo o que tu precisas para te lançares no mercado de trabalho.
-            <br />
-            <br /> Em Maio, a JuniFEUP reúne dezenas de empresas e profissionais de todas as indústrias que a FEUP emprega.
-            <br /> Não são conferências.
-            <br /> São as pessoas atrás dos números, juntos para revolucionar o networking entre a indústria e o mundo académico.
-            <br /> As relações que criamos neste evento, sem gravatas, sem bancas, sem complicações, vão alimentar o teu crescimento e desenvolver a tua carreira promissora.
+            O Another Day @ The Office é uma sessão de cocktails que promove o networking entre estudantes e os líderes de grandes empresas. Aqui, encontrarás tudo o que precisas para te lançares no mercado de trabalho e começares já a traçar o teu futuro. 
+            <br /> Em Maio, a JuniFEUP reúne dezenas de empresas e profissionais de inúmeras indústrias.
+            <br /> Não são conferências. Não são bancas, nem CV’s.
+            <br /> São as pessoas reunidas, juntas para revolucionar o networking entre o mundo do trabalho e o universo académico.
+            <br /> As relações que criamos neste evento, sem gravatas, sem bancas, sem complicações, vão inspirar o teu crescimento pessoal e potenciar o arranque da tua carreira promissora.
+            <br /> Não precisas de CV’s - deixa a papelada para nós! Tudo o que tens de fazer é seres tu mesmo e convencer possíveis empregadores que és o profissional de quem eles realmente precisam.
             <br />
             <br />
           </p>
@@ -308,7 +310,7 @@
       </div>
       <form action="assets/php/contact.php" method="POST" id="registration-form" enctype="multipart/form-data">
         <div class="row">
-          <div class="col-md-12" id="registration-msg" <?php if(!isset($_GET['success'])) { ?> style="display:none;" <?php } ?>>
+          <div class="col-md-12" id="registration-msg" style="display:none;" <?php if(!isset($_GET['success'])) { ?>  <?php } ?>>
             <div class="alert <?php if(isset($_GET['success'])) { if(boolval($_GET['success'])) echo 'alert-success'; else echo 'alert-danger'; }?>">
               <?php
               if(isset($_GET['success']) && boolval($_GET['success']))
