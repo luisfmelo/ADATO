@@ -45,7 +45,7 @@
 
 	if($mail->send()) {
 		$form_data['success'] = true;
-		$replymsg = "Obrigado $fname. O teu registo foi efetuado com sucesso\n\nCumprimentos\nJuniFEUP";
+		$replymsg = "Obrigado $fname pelo teu registo!\n\nEstamos a processar a tua inscrição.\nDaqui a nada entraremos em contacto contigo!\n\nAD@TO - sem bancas, sem gravata, sem complicações - a tua carreira,  o teu futuro\n\n\nJuniFEUP";
 		$mail->clearAddresses();
 		$mail->clearAttachments();
 		$mail->addAddress($email);
