@@ -76,3 +76,18 @@ $(document).ready(function() {
 /**
  * AUDIO CONTROLS
  */
+ function aud_play_pause() {
+    var myAudio = document.getElementById("audio");
+    var icon = document.getElementById("iconBtn");
+
+     if (icon.classList.contains("pauseBtn"))
+     {
+       icon.classList.add('playBtn');
+       icon.classList.remove('pauseBtn');
+       myAudio.pause();
+     } else {
+       icon.classList.add('pauseBtn');
+       icon.classList.remove('playBtn');
+       myAudio.play();
+    }
+  }

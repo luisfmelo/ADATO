@@ -17,6 +17,12 @@
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
+
+  <div class="btn-group btn-group-xs audio-state">
+    <a href="javascript:void(0)" class="btn-primary" data-toggle="tooltip" title="Preview"
+      onclick="aud_play_pause()"><i id="iconBtn" class="pauseBtn"></i></a>
+  </div>
+
   <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
     <div class="container">
       <div class="navbar-header">
@@ -50,8 +56,8 @@
           <li><a href="#register" class="smoothScroll">Inscrição</a></li>
           <li><a href="#faq" class="smoothScroll">FAQ</a></li>
           <li><a href="#contact" class="smoothScroll">Contactos</a></li>
-
         </ul>
+
       </div>
     </div>
     <!-- /.container -->
@@ -64,7 +70,7 @@
       <br />
 
       <div class="site-branding">
-        <a class="logo" href="index.html">
+        <a class="logo" href="index.php">
 
           <!-- logo image  -->
 
@@ -88,125 +94,123 @@
       </audio>
   </div>
 
-    <section id="about" class="section about">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
 
-            <h3 class="section-title">Sobre Nós</h3>
+          <h3 class="section-title">Sobre Nós</h3>
 
-            <p>Somos uma empresa júnior formada por estudantes de engenharia.
-              <br /> Acreditamos no Potencial Humano.
-              <br /> O nosso objectivo é aplicar conhecimento, formar a nossa equipa e ajudar as empresas nacionais a valorizarem os seus serviços e produtos.
-              <br />
-            </p>
+          <p>Somos uma empresa júnior formada por estudantes de engenharia.
+            <br /> Acreditamos no Potencial Humano.
+            <br /> O nosso objectivo é aplicar conhecimento, formar a nossa equipa e ajudar as empresas nacionais a valorizarem os seus serviços e produtos.
+            <br />
+          </p>
 
-            <figure>
-              <a href="http://www.junifeup.pt/">
-                <img alt="" class="img-responsive juni" src="assets/images/about-us.jpg">
-              </a>
-            </figure>
-
-          </div>
-          <!-- /.col-sm-6 -->
-
-          <div class="col-sm-6">
-
-            <h3 class="section-title multiple-title">Sobre o Evento</h3>
-
-            <p style="width:100%;">
-              O Another Day @ The Office é uma sessão de cocktails que promove o networking entre estudantes e os líderes de grandes empresas e tem tudo o que tu precisas para te lançares no mercado de trabalho.
-              <br />
-              <br /> Em Maio, a JuniFEUP reúne dezenas de empresas e profissionais de todas as indústrias que a FEUP emprega.
-              <br /> Não são conferências.
-              <br /> São as pessoas atrás dos números, juntos para revolucionar o networking entre a indústria e o mundo académico.
-              <br /> As relações que criamos neste evento, sem gravatas, sem bancas, sem complicações, vão alimentar o teu crescimento e desenvolver a tua carreira promissora.
-              <br />
-              <br />
-            </p>
-            <div class="col-sm-12" style="text-align: center; font-weight: bold; ">
-
-              ANOTHER DAY @ THE OFFICE.
-              <br /> Sem gravata.
-              <br /> Sem bancas.
-              <br /> Sem complicações.
-            </div>
-          </div>
-          <!-- /.col-sm-12 -->
+          <figure>
+            <a href="http://www.junifeup.pt/">
+              <img alt="" class="img-responsive juni" src="assets/images/about-us.jpg">
+            </a>
+          </figure>
 
         </div>
-        <!-- /.row -->
+        <!-- /.col-sm-6 -->
+
+        <div class="col-sm-6">
+
+          <h3 class="section-title multiple-title">Sobre o Evento</h3>
+
+          <p style="width:100%;">
+            O Another Day @ The Office é uma sessão de cocktails que promove o networking entre estudantes e os líderes de grandes empresas e tem tudo o que tu precisas para te lançares no mercado de trabalho.
+            <br />
+            <br /> Em Maio, a JuniFEUP reúne dezenas de empresas e profissionais de todas as indústrias que a FEUP emprega.
+            <br /> Não são conferências.
+            <br /> São as pessoas atrás dos números, juntos para revolucionar o networking entre a indústria e o mundo académico.
+            <br /> As relações que criamos neste evento, sem gravatas, sem bancas, sem complicações, vão alimentar o teu crescimento e desenvolver a tua carreira promissora.
+            <br />
+            <br />
+          </p>
+          <div class="col-sm-12" style="text-align: center; font-weight: bold; ">
+
+            ANOTHER DAY @ THE OFFICE.
+            <br /> Sem gravata.
+            <br /> Sem bancas.
+            <br /> Sem complicações.
+          </div>
+        </div>
+        <!-- /.col-sm-12 -->
+
       </div>
-      <!-- /.container -->
-    </section>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
 
-    <section id="quebra" class="section quebra">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4"> </div>
+  <section id="quebra" class="section quebra">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4"> </div>
 
-          <div class="col-sm-4">
-            <figure>
-              <a href="#">
-                <img alt="" class="img-responsive logo_squar" src="assets/images/logo_square.png">
-              </a>
-            </figure>
-          </div>
-          <!-- /.col-sm-6 -->
-
-          <div class="col-sm-3"> </div>
-          <!-- /.col-sm-12 -->
-
+        <div class="col-sm-4">
+          <figure>
+            <a href="#">
+              <img alt="" class="img-responsive logo_squar" src="assets/images/logo_square.png">
+            </a>
+          </figure>
         </div>
-        <!-- /.row -->
+        <!-- /.col-sm-6 -->
+
+        <div class="col-sm-3"> </div>
+        <!-- /.col-sm-12 -->
+
       </div>
-      <!-- /.container -->
-    </section>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
 
-
-    <section id="partner" class="section partner">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h3 class="section-title">Empresas Presentes</h3>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-12 title">Crystal Sponsors</div>
-        </div>
-        <div class="row">
-          <hr class="col-sm-4 cols col-md-offset-4">
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <a class="partner-box crystal-1"></a>
-          </div>
-          <div class="col-sm-4">
-            <a class="partner-box crystal-2"></a>
-          </div>
-          <div class="col-sm-4">
-            <a class="partner-box crystal-3"></a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <a class="partner-box crystal-4"></a>
-          </div>
-          <div class="col-sm-4">
-            <a class="partner-box crystal-5"></a>
-          </div>
-          <div class="col-sm-4">
-            <a class="partner-box crystal-6"></a>
-          </div>
+  <section id="partner" class="section partner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Empresas Presentes</h3>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-sm-12 title">Crystal Sponsors</div>
+      </div>
+      <div class="row">
+        <hr class="col-sm-4 cols col-md-offset-4">
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <a class="partner-box crystal-1"></a>
+        </div>
+        <div class="col-sm-4">
+          <a class="partner-box crystal-2"></a>
+        </div>
+        <div class="col-sm-4">
+          <a class="partner-box crystal-3"></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <a class="partner-box crystal-4"></a>
+        </div>
+        <div class="col-sm-4">
+          <a class="partner-box crystal-5"></a>
+        </div>
+        <div class="col-sm-4">
+          <a class="partner-box crystal-6"></a>
+        </div>
+      </div>
+
 
 
       <div class="row">
         <div class="col-sm-12 title">Glass Sponsors</div>
       </div>
-
       <div class="row">
         <hr class="col-sm-4 cols col-md-offset-4">
       </div>
@@ -240,18 +244,18 @@
       <div class="row">
         <hr class="col-sm-4 cols col-md-offset-4">
       </div>
-
       <div class="row">
-        <div class="col-sm-4">
-          <a class="partner-box convidado-3"></a>
-        </div>
-        <div class="col-sm-4">
-          <a class="partner-box convidado-1"></a>
-        </div>
-        <div class="col-sm-4">
-          <a class="partner-box convidado-2"></a>
-        </div>
+      <div class="col-sm-4">
+        <a class="partner-box convidado-3"></a>
       </div>
+      <div class="col-sm-4">
+        <a class="partner-box convidado-1"></a>
+      </div>
+      <div class="col-sm-4">
+        <a class="partner-box convidado-2"></a>
+      </div>
+    </div>
+    </div>
   </section>
 
   <section id="register" class="section bg-image-1 facts text-center">
@@ -538,18 +542,6 @@
   <!--  <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.js"></script>-->
   <script src="assets/js/smoothscroll.js"></script>
   <script src="assets/js/main.js"></script>
-  <script type="text/javascript">
-    function muteAudio() {
-      var audio = document.getElementById('audioPlayer');
-
-      if (audio.mute == false)
-        document.getElementById('audioPlayer').muted = true;
-      else {
-        audio.mute == true
-        document.getElementById('audioPlayer').muted = false;
-      }
-    }
-  </script>
 </body>
 
 </html>
