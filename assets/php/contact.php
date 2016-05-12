@@ -1,7 +1,7 @@
 <?php
 	require 'ligacaoSMTP.php';
 
-	$form_data = [];
+	$form_data = ['success' => true];
 
 	$fname	= $_POST['fname'];
 	$email	= $_POST['email'];
@@ -15,7 +15,7 @@
 	if (isset($_FILES['cv'])) {
 		$fileType = pathinfo(basename($_FILES["cv"]["name"]), PATHINFO_EXTENSION);
 		$target_dir = '../cv/';
-		$target_file = $target_dir . $fname . '.' .$fileType;
+		$target_file = $target_dir . $email . '.' .$fileType;
 
 		if ($fileType != "pdf" && $fileType != "jpg" && $fileType != "png" && $fileType != "jpeg") {
 			echo "Apenas são aceites ficheiros JPG, JPEG, PNG & PDF.";
@@ -37,7 +37,7 @@
 
   	$message = "Name: $fname, \nEmail: $email, \nCurso: $curso, \nAno: $ano, \nHobbie1: $h1, \nHobbie2: $h2, \nHobbie3: $h3, \nLinkedin: $linkedin.";
 
-	$mail->addAddress('pedrocova96@gmail.com');
+	$mail->addAddress('adato@junifeup.pt');
   	$mail->addAttachment( $target_file , 'cv.pdf' );
 	$mail->Subject = 'Registo AD@TO';
 
@@ -53,12 +53,6 @@
 		$mail->Body = $replymsg;
 		$mail->send();
 	}
-	else {
-		$form_data['success'] = false;
-	}
 
-	if($form_data['success'])
-		header("Location: http://$_SERVER[HTTP_HOST]?msg=Registo efetuado com sucesso&color=green#registration");
-	else
-		header("Location: http://$_SERVER[HTTP_HOST]?msg=Registo não foi efetuado com sucesso, pedimos desculpa!&color=red#registration");
+	header("Location: http://$_SERVER[HTTP_HOST]?success=".$form_data['success']."#registration");
 	die();

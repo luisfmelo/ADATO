@@ -292,17 +292,6 @@
 
   <section id="registration" class="section registration">
     <div class="container">
-      <?php
-      if(isset($_GET['msg'])) {
-      ?>
-        <div class="row">
-            <div class="col-md-12">
-                <h5 style="color: <?php echo $_GET['color']; ?>;"><?php echo $_GET['msg']; ?></h5>
-            </div>
-        </div>
-      <?php
-      }
-      ?>
       <div class="row">
         <div class="col-md-12">
           <h3 class="section-title">Inscrição</h3>
@@ -310,8 +299,15 @@
       </div>
       <form action="assets/PHP/contact.php" method="POST" id="registration-form" enctype="multipart/form-data">
         <div class="row">
-          <div class="col-md-12" id="registration-msg" style="display:none;">
-            <div class="alert"></div>
+          <div class="col-md-12" id="registration-msg" <?php if(!isset($_GET['success'])) { ?> style="display:none;" <?php } ?>>
+            <div class="alert <?php if(isset($_GET['success'])) { if(boolval($_GET['success'])) echo 'alert-success'; else echo 'alert-danger'; }?>">
+              <?php
+              if(isset($_GET['success']) && boolval($_GET['success']))
+                echo "Registration Successful";
+              else
+                echo "Registration Failed";
+              ?>
+            </div>
           </div>
         </div>
         <div class="form-group row">
