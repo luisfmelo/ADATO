@@ -67,7 +67,12 @@
         <a class="logo" href="index.html">
 
           <!-- logo image  -->
-          <img style="width:100%;" src="assets/images/event.png" alt="Another Day @ The Office">
+
+          <div class="row main_logo">
+            <div class="col-sm-12">
+              <img class="main_logo" src="assets/images/event.png" alt="Another Day @ The Office">
+            </div>
+          </div>
         </a>
       </div>
       <div class="btns">
