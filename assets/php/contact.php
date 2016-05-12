@@ -16,7 +16,7 @@
 	echo 4;
 	//generate_credential($fname, $email, $curso, $h1, $h2, $h3);
 	echo 5;
-	if (isset($_FILES['cv'])) {
+	if (isset($_FILES['cv']) && !empty($_FILES['cv']['name'])) {
 		$fileType = pathinfo(basename($_FILES["cv"]["name"]), PATHINFO_EXTENSION);
 		$target_dir = '../cv/';
 		$target_file = $target_dir . $email . '.' .$fileType;
