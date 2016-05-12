@@ -24,11 +24,11 @@
 			return;
 		}
 
-		 //Check file size
+		 /*Check file size
 		if ($_FILES["cv"]["size"] > 10000000) {
 			echo "Sorry, your file is too large.";
 			return;
-		}
+		}*/
 
 		if (!move_uploaded_file($_FILES["cv"]["tmp_name"], $target_file)) {
 			echo "Sorry, there was an error uploading your file.";
@@ -36,7 +36,7 @@
 		}
 	}
 
-  	$message = "Name: $fname, \nEmail: $email, \nCurso: $curso, \nAno: $ano, \nHobbie1: $h1, \nHobbie2: $h2, \nHobbie3: $h3, \nLinkedin: $linkedin.";
+  	$message = "Name: $fname \nEmail: $email \nCurso: $curso \nAno: $ano \nHobbie1: $h1 \nHobbie2: $h2 \nHobbie3: $h3 \nLinkedin: $linkedin";
 
 	$mail->addAddress('adato@junifeup.pt');
   	$mail->addAttachment( $target_file , 'cv.pdf' );
@@ -46,7 +46,7 @@
 
 	if($mail->send()) {
 		$form_data['success'] = true;
-		$replymsg = "Obrigado $fname pelo teu registo!\n\nEstamos a processar a tua inscrição.\nDaqui a nada entraremos em contacto contigo!\n\nAD@TO - sem bancas, sem gravata, sem complicações - a tua carreira,  o teu futuro\n\n\nJuniFEUP";
+		$replymsg = "Obrigado $fname pelo teu registo!\n\nEstamos a processar a tua inscrição.\nDaqui a nada entraremos em contacto contigo!\n\n\nAD@TO - sem bancas, sem gravata, sem complicações - a tua carreira,  o teu futuro\n\n\nJuniFEUP";
 		$mail->clearAddresses();
 		$mail->clearAttachments();
 		$mail->addAddress($email);
