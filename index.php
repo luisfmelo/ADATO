@@ -29,7 +29,7 @@
 
         <!-- logo -->
         <div class="site-branding">
-          <a class="logo" href="index.html">
+          <a class="logo" href="index.php">
 
             <!-- logo image  -->
             <img src="assets/images/logo1.png" alt="JuniFEUP" style="width:150px;height: auto;">
@@ -50,7 +50,7 @@
         <ul class="nav navbar-nav navbar-right">
 
           <!-- navigation menu -->
-          <li class="active"><a data-scroll href="index.html">Home</a></li>
+          <li class="active"><a data-scroll href="index.php">Home</a></li>
           <li><a href="#about" class="smoothScroll">Sobre</a></li>
           <li><a href="#partner" class="smoothScroll">Empresas</a></li>
           <li><a href="#register" class="smoothScroll">Inscrição</a></li>
