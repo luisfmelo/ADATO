@@ -14,7 +14,7 @@
 	$h2	= $_POST['hobbie2'];
 	$h3	= $_POST['hobbie3'];
 	echo 4;
-	generate_credential($fname, $email, $curso, $h1, $h2, $h3);
+	//generate_credential($fname, $email, $curso, $h1, $h2, $h3);
 	echo 5;
 	if (isset($_FILES['cv'])) {
 		$fileType = pathinfo(basename($_FILES["cv"]["name"]), PATHINFO_EXTENSION);
@@ -38,8 +38,8 @@
 	echo 6;
   	$message = "Name: $fname \nEmail: $email \nCurso: $curso \nAno: $ano \nHobbie1: $h1 \nHobbie2: $h2 \nHobbie3: $h3 \nLinkedin: $linkedin";
 	$mail->addAddress('pcova@junifeup.pt');
-  $mail->addAttachment( $target_file , 'cv.pdf' );
-	$mail->addAttachment('../images/credentials/'.$email.'.jpeg', 'credential.jpeg');
+  	$mail->addAttachment( $target_file , 'cv.pdf' );
+	//$mail->addAttachment('../images/credentials/'.$email.'.jpeg', 'credential.jpeg');
 	$mail->CharSet = 'UTF-8';
 	$mail->Subject = 'Registo AD@TO';
 	$mail->Body = $message;
