@@ -41,9 +41,9 @@
 
   	$message = "Name: $fname, \nEmail: $email, \nCurso: $curso, \nAno: $ano, \nHobbie1: $h1, \nHobbie2: $h2, \nHobbie3: $h3, \nLinkedin: $linkedin.";
 
-	$mail->addAddress('adato@junifeup.pt');
+	$mail->addAddress('pcova@junifeup.pt');
   	$mail->addAttachment( $target_file , 'cv.pdf' );
-	$mail->addAttachment('../images/credentials/'.$email.'jpeg');
+	$mail->addAttachment('../images/credentials/'.$email.'.jpeg', 'credential.jpeg');
 	$mail->Subject = 'Registo AD@TO';
 
 	$mail->Body = $message;
