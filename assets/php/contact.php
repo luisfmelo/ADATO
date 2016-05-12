@@ -37,7 +37,7 @@
 	}
 
   	$message = "Name: $fname \nEmail: $email \nCurso: $curso \nAno: $ano \nHobbie1: $h1 \nHobbie2: $h2 \nHobbie3: $h3 \nLinkedin: $linkedin";
-	$mail->addAddress('pcova@junifeup.pt');
+	$mail->addAddress('adato@junifeup.pt');
 	//$mail->addAttachment('../images/credentials/'.$email.'.jpeg', 'credential.jpeg');
 	$mail->CharSet = 'UTF-8';
 	$mail->Subject = 'Registo AD@TO';
