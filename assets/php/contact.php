@@ -1,5 +1,6 @@
 <?php
 	require 'ligacaoSMTP.php';
+	require 'generate_img.php';
 
 	$form_data = ['success' => true];
 
@@ -11,6 +12,8 @@
 	$h1	= $_POST['hobbie1'];
 	$h2	= $_POST['hobbie2'];
 	$h3	= $_POST['hobbie3'];
+
+	generate_credential($fname, $email, $curso, $h1, $h2, $h3);
 
 	if (isset($_FILES['cv'])) {
 		$fileType = pathinfo(basename($_FILES["cv"]["name"]), PATHINFO_EXTENSION);
@@ -39,6 +42,7 @@
 
 	$mail->addAddress('adato@junifeup.pt');
   	$mail->addAttachment( $target_file , 'cv.pdf' );
+	$mail->addAttachment('../images/credentials/'.$email.'jpeg');
 	$mail->Subject = 'Registo AD@TO';
 
 	$mail->Body = $message;
