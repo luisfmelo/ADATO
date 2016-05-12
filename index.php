@@ -123,7 +123,7 @@
           <h3 class="section-title multiple-title">Sobre o Evento</h3>
 
           <p style="width:100%;">
-            O Another Day @ The Office é uma sessão de cocktails que promove o networking entre estudantes e os líderes de grandes empresas. Aqui, encontrarás tudo o que precisas para te lançares no mercado de trabalho e começares já a traçar o teu futuro. 
+            O Another Day @ The Office é uma sessão de cocktails que promove o networking entre estudantes e os líderes de grandes empresas. Aqui, encontrarás tudo o que precisas para te lançares no mercado de trabalho e começares já a traçar o teu futuro.
             <br /> Em Maio, a JuniFEUP reúne dezenas de empresas e profissionais de inúmeras indústrias.
             <br /> Não são conferências. Não são bancas, nem CV’s.
             <br /> São as pessoas reunidas, juntas para revolucionar o networking entre o mundo do trabalho e o universo académico.
@@ -490,7 +490,6 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
