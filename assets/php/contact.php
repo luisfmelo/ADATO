@@ -24,7 +24,7 @@
 			return;
 		}
 
-		 Check file size
+		 //Check file size
 		if ($_FILES["cv"]["size"] > 10000000) {
 			echo "Sorry, your file is too large.";
 			return;
