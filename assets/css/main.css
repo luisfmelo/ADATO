@@ -562,9 +562,6 @@ ul li {
   }
 }
 @media (min-width: 992px) {
-  .schedule-box {
-    margin: 0;
-  }
   .grid-item-md-6 {
     width: 50%;
   }
@@ -645,4 +642,15 @@ h4 {
 }
 .faq .section-title {
   color: #FFF;
+}
+
+.main_logo{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#navbar, .navbar-custom{
+  width:100%!important;
+  margin-right:10%!important;
 }
