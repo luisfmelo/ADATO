@@ -310,7 +310,7 @@
       </div>
       <form action="assets/php/contact.php" method="POST" id="registration-form" enctype="multipart/form-data">
         <div class="row">
-          <div class="col-md-12" id="registration-msg" <?php if(isset($_GET['success'])) { ?> style="display:none;" <?php } ?>>
+          <div class="col-md-12" id="registration-msg" <?php if(!isset($_GET['success'])) { ?> style="display:none;" <?php } ?>>
             <div class="alert <?php if(isset($_GET['success'])) { if(boolval($_GET['success'])) echo 'alert-success'; else echo 'alert-danger'; }?>">
               <?php
               if(isset($_GET['success']) && boolval($_GET['success']))
