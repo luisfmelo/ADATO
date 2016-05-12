@@ -597,7 +597,7 @@ ul li {
 }
 .headerBTN:hover {
   color: #FFF;
-  font-size: 15px;
+  letter-spacing: 5px;
 }
 .title {
   color: rgb(33, 35, 36);
