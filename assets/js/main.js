@@ -91,3 +91,12 @@ $(document).ready(function() {
        myAudio.play();
     }
   }
+
+  $(document).ready(function() {
+    // the site has now loaded, grab the video!
+    var audio = document.getElementById("audio");
+    // now tweak the volume!
+    audio.volume = 0.5;
+    // now, play it!
+    audio.play();
+});

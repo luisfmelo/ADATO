@@ -50,7 +50,7 @@
         <ul class="nav navbar-nav navbar-right">
 
           <!-- navigation menu -->
-          <li class="active"><a data-scroll href="index.php">Home</a></li>
+          <li class="active"><a href="#site-header" class="smoothScroll">Home</a></li>
           <li><a href="#about" class="smoothScroll">Sobre</a></li>
           <li><a href="#partner" class="smoothScroll">Empresas</a></li>
           <li><a href="#register" class="smoothScroll">Inscrição</a></li>
@@ -63,7 +63,7 @@
     <!-- /.container -->
   </nav>
 
-  <header id="site-header" class="site-header valign-center">
+  <header id="site-header" class="section site-header valign-center">
     <div class="intro row">
 
       <h2>19 Maio, 2016 / FEUP</h2>
