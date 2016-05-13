@@ -64,10 +64,10 @@ ul li {
   display: inline-block;
   height: 32px;
   width: 32px;
-  color: #4e4e4e;
 }
 .social-block li a i {
   font-size: 1.5em;
+  color: rgb(33, 35, 36);
 }
 .social-block li a:hover, .social-block li a:focus {
   color: #000;
@@ -485,7 +485,7 @@ ul li {
  * 6.8 Section: FAQ
  */
 
-.faq .panel-heading {
+.faq .panel-heading, .faq .section-title {
   cursor: pointer;
   color: #FFF;
 }
@@ -569,9 +569,9 @@ ul li {
  */
 
 .site-footer {
-  background-color: rgb(33, 35, 36);
+  background-color: #FFF;
   /*#000;*/
-  color: #fff;
+  color: rgb(33, 35, 36);
   text-align: center;
   padding: 30px 0;
 }
@@ -634,7 +634,7 @@ h4 {
 .faq {
   background-color: rgb(33, 35, 36);
 }
-.faq .section-title {
+.faq, .loc-text {
   color: #FFF;
 }
 
@@ -649,6 +649,12 @@ h4 {
   margin-right:10%!important;
 }
 
+.location {
+  background-color: rgb(33, 35, 36);
+}
+.location .section-title {
+  color: #FFF;
+}
 
 
 
@@ -679,3 +685,28 @@ h4 {
   width: 25%;
   background-color: transparent;
 }
+
+#myCarousel{
+  width:60%;
+  margin: 0 auto;
+}
+
+.img_media{
+  width:100%;
+  height:auto;
+}
+
+.carousel-indicators li{
+  background-color: rgb(33, 35, 36)!important;
+  opacity: 0.5;
+}
+
+.carousel-indicators .active{
+  background-color: rgb(33, 35, 36)!important;
+  opacity: 1;
+}
+
+/*.carousel-control span{
+  color: rgb(33, 35, 36)!important;
+}
+*/

@@ -55,6 +55,7 @@
           <li><a href="#partner" class="smoothScroll">Empresas</a></li>
           <li><a href="#register" class="smoothScroll">Inscrição</a></li>
           <li><a href="#faq" class="smoothScroll">FAQ</a></li>
+          <li><a href="#media" class="smoothScroll">Media</a></li>
           <li><a href="#contact" class="smoothScroll">Contactos</a></li>
         </ul>
 
@@ -310,7 +311,7 @@
       </div>
       <form action="assets/php/contact.php" method="POST" id="registration-form" enctype="multipart/form-data">
         <div class="row">
-          <div class="col-md-12" id="registration-msg" style="display:none;"<?php if(!isset($_GET['success'])) { ?> <?php } ?>>
+          <div class="col-md-12" id="registration-msg" <?php if(!isset($_GET['success'])) { ?> style="display:none;" <?php } ?>>
             <div class="alert <?php if(isset($_GET['success'])) { if(boolval($_GET['success'])) echo 'alert-success'; else echo 'alert-danger'; }?>">
               <?php
               if(isset($_GET['success']) && boolval($_GET['success']))
@@ -496,13 +497,66 @@
     </div>
   </section>
 
+
+
+
+  <section id="media" class="section media">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Media</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <a href="http://informacao.canalsuperior.pt/noticia/20749#anchor" target="_blank">
+                    <img class="img_media" src="assets/images/media/canalSuperior.png" alt="Canal Superior">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="http://www.jornaldenegocios.pt/empresas/detalhe/tu_empresas_e_um_cocktail_para_arranjar_emprego_no_porto.html" target="_blank">
+                    <img class="img_media" src="assets/images/media/jornalNegocios.png" alt="Jornal de Negócios">
+                  </a>
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div> <!-- Carousel -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
   <section id="contact" class="section location">
     <div class="container">
       <div class="row">
         <div class="col-sm-3">
           <h3 class="section-title">Event Location</h3>
           <address>
-            <p>
+            <p class="loc-text">
               <i class="fa fa-briefcase" aria-hidden="true"></i> JuniFEUP<br /><br />
               <i class="fa fa-university" aria-hidden="true"></i> FEUP, sala I(-105)<br /><br />
               <i class="fa fa-map-marker" aria-hidden="true"></i> Rua Dr. Roberto Frias<br /><br />
