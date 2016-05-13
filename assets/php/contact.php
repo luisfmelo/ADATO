@@ -53,6 +53,6 @@
 		$mail->Body = $replymsg;
 		$mail->send();
 	}
-	echo 8;
+	
 	header("Location: http://$_SERVER[HTTP_HOST]?success=".$form_data['success']."#registration");
 	die();
