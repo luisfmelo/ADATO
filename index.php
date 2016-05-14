@@ -578,10 +578,16 @@
       <div class="row">
         <div class="col-md-12">
           <ul class="social-block">
-            <li><a href="https://twitter.com/JuniFEUP" target="_blank"><i class="ion-social-twitter"></i></a></li>
+            <!--
+			<li><a href="https://twitter.com/JuniFEUP" target="_blank"><i class="ion-social-twitter"></i></a></li>
             <li><a href="https://www.facebook.com/junifeup/" target="_blank"><i class="ion-social-facebook"></i></a></li>
             <li><a href="https://www.linkedin.com/company/junifeup" target="_blank"><i class="ion-social-linkedin-outline"></i></a></li>
             <li><a href="https://www.youtube.com/channel/UCY9IT5wgxAgqV5gebEzEKQQ" target="_blank"><i class="ion-social-youtube"></i></a></li>
+			-->
+			<li><a href="https://twitter.com/JuniFEUP" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.facebook.com/junifeup/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/junifeup" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCY9IT5wgxAgqV5gebEzEKQQ" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
           </ul>
         </div>
       </div>
