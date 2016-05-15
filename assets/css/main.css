@@ -634,8 +634,8 @@ h4 {
 .faq {
   background-color: rgb(33, 35, 36);
 }
-.faq, .loc-text {
-  color: rgb(33, 35, 36);
+.loc-text {
+  color: #FFF;
 }
 
 .main_logo{

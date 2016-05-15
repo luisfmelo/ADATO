@@ -516,6 +516,7 @@
               <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
               </ol>
 
               <!-- Wrapper for slides -->
@@ -528,6 +529,11 @@
                 <div class="item">
                   <a href="http://www.jornaldenegocios.pt/empresas/detalhe/tu_empresas_e_um_cocktail_para_arranjar_emprego_no_porto.html" target="_blank">
                     <img class="img_media" src="assets/images/media/jornalNegocios.png" alt="Jornal de Negócios">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="http://uniarea.com/event/another-day-the-office/" target="_blank">
+                    <img class="img_media" src="assets/images/media/uniarea.png" alt="Jornal de Negócios">
                   </a>
                 </div>
               </div>
