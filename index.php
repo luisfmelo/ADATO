@@ -517,6 +517,7 @@
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
               </ol>
 
               <!-- Wrapper for slides -->
@@ -533,7 +534,12 @@
                 </div>
                 <div class="item">
                   <a href="http://uniarea.com/event/another-day-the-office/" target="_blank">
-                    <img class="img_media" src="assets/images/media/uniarea.png" alt="Jornal de Negócios">
+                    <img class="img_media" src="assets/images/media/uniarea.png" alt="UniArea">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="http://www.forum.pt/superior/17055-um-cocktail-de-negocios" target="_blank">
+                    <img class="img_media" src="assets/images/media/forumEstudante.png" alt="Forum Estudante">
                   </a>
                 </div>
               </div>
