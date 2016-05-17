@@ -542,6 +542,11 @@
                     <img class="img_media" src="assets/images/media/forumEstudante.png" alt="Forum Estudante">
                   </a>
                 </div>
+                <div class="item">
+                  <a href="http://www.engenhariaradio.pt/2016/05/junifeup-anuncia-another-day-the-office" target="_blank">
+                    <img class="img_media" src="assets/images/media/engRadio.png" alt="Forum Estudante">
+                  </a>
+                </div>
               </div>
 
               <!-- Controls -->
@@ -571,7 +576,7 @@
             <p class="loc-text">
               <i class="fa fa-briefcase" aria-hidden="true"></i> JuniFEUP<br /><br />
               <i class="fa fa-university" aria-hidden="true"></i> FEUP, sala I(-105)<br /><br />
-              <i class="fa fa-map-marker" aria-hidden="true"></i> Rua Dr. Roberto Frias<br /><br />
+              <i class="fa fa-map-marker" aria-hidden="true"></i> Rua Dr. Roberto Frias, FEUP I (-105)<br /><br />
               <i class="fa fa-phone" aria-hidden="true"></i> +351 225 081 554<br /><br />
               <i class="fa fa-envelope-o" aria-hidden="true"></i> adato@junifeup.pt
             </p>
