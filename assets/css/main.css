@@ -487,7 +487,7 @@ ul li {
 
 .faq .panel-heading, .faq .section-title {
   cursor: pointer;
-  color: #FFF;
+  color: rgb(33, 35, 36);
 }
 .faq .faq-toggle.collapsed::before {
   font-family: "Ionicons";
